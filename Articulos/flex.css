@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Coloca las cajas en filas hacia abajo */
+    align-items: flex-end; /* Centra las cajas horizontalmente */
+    gap: 20px; /* Espacio entre las cajas */
+    padding: 20px;
+    gap: 20px;
+}
+
+.box {
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Fondo degradado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el texto dentro de las cajas */
+    color: white;
+}
+.container-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+.hover-box { 
+    width: 200px; 
+    padding: 20px; 
+    border-radius: 10px; 
+    background-color: #007bff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; /* Centra el texto dentro de las cajas */
+    color: white; transition: transform 0.3s; /* Transición suave para el efecto hover */ 
+    transition: transform o.3s;
+} 
+.hover-box:hover { 
+    transform: translateY(-10px); /* Mueve la caja hacia arriba al pasar el ratón */
+     }

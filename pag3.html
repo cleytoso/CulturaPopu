@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Registro e Inicio de Sesión</title>
+
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Formulario de Registro -->
+    <div class="form-box">
+      <h2>Registro</h2>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+
+      <label for="telefono">Número de Teléfono:</label>
+      <input type="text" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" id="contrasena" name="contrasena" placeholder="Mínimo 8 caracteres" minlength="8" required>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="tratamiento" name="tratamiento" required>
+        <label for="tratamiento">Acepto el tratamiento de datos</label>
+        <a href="ejercicio3.html">Terminos y condiciones</a>
+      </div>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="tratamiento" name="tratamiento" required>
+        <label for="tratamiento">Acepto el tratamiento de datos</label>
+        <a href="ejercicio3.html">Terminos y condiciones</a>
+      </div>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="suscripcion" name="suscripcion">
+        <label for="suscripcion">Suscribirme a la información</label>
+      </div>
+
+      <button type="submit">Registrarse</button>
+    </div>
+
+    <!-- Formulario de Inicio de Sesión -->
+    <div class="form-box">
+      <h2>Inicio de Sesión</h2>
+      <label for="correo-login">Correo Electrónico:</label>
+      <input type="email" id="correo-login" name="correo-login" placeholder="Ingresa tu correo" required>
+
+      <label for="contrasena-login">Contraseña:</label>
+      <input type="password" id="contrasena-login" name="contrasena-login" placeholder="Ingresa tu contraseña" required>
+
+      <button type="submit">Iniciar Sesión</button>
+    </div>
+  </div>
+
+  <dialog id="myDialog">
+    <p>Este es un cuadro de diálogo.</p>
+    <button id="closeDialog">Cerrar</button>
+  </dialog>
+
+  <script>
+    const dialog = document.getElementById('myDialog');
+    const openButton = document.getElementById('terminos1');
+    const closeButton = document.getElementById('closeDialog');
+
+    // Abrir el diálogo
+    openButton.addEventListener('click', () => {
+      dialog.showModal(); // Abre el diálogo en modo modal
+    });
+
+    // Cerrar el diálogo
+    closeButton.addEventListener('click', () => {
+      dialog.close(); // Cierra el diálogo
+    });
+  </script>
+</body>
+</html>
