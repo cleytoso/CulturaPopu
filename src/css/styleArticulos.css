@@ -1,0 +1,154 @@
+/* Colores base */
+:root {
+    --color-primary: #B31237;
+    --color-secondary: #F03813;
+    --color-accent: #FF8826;
+    --color-highlight: #FFB914;
+    --color-complement: #7e1616;
+    --color-background: #fdfdfd;
+    --color-text: #333;
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+.image-container {
+    text-align: center;
+    margin: 2rem 0;
+    overflow: hidden; /* Evita que cualquier contenido, como la imagen, se salga del borde */
+    border: 1px solid var(--color-primary); /* Agrega un borde para referencia */
+    border-radius: 10px; /* Bordes redondeados del contenedor */
+}
+
+.event-image {
+    max-width: 100%; /* Ajusta el tamaño de la imagen al ancho del contenedor */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    display: block; /* Evita el espacio blanco alrededor de imágenes inline */
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* Encabezado */
+.header {
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Artículo */
+.article {
+    background: var(--color-background);
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.article h2 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.article p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Información del evento */
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.info-box {
+    background: var(--color-complement);
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    flex: 1 1 calc(50% - 1rem);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-box h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Formulario */
+.form {
+    margin-top: 2rem;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button {
+    background: var(--color-primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form button:hover {
+    background: var(--color-accent);
+}
+
+/* Pie de página */
+.footer {
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-top: 5px solid /* Borde superior para destacar */
+    font-size 0.9rem; /* Tamaño de texto más pequeño */
+}
+
